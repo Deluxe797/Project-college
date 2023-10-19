@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/signin.css">
+    <title>Sing-in</title>
+</head>
+<body>
+    <div class='container'>
+        <div class='card'>
+            <h1> Login </h1>
+            
+            <div id='msgError'></div>
+            <div id='msgSuccess'></div>
+            
+            <div class='label-float'>
+                <input type='text' id='usuario' placeholder='' required>
+                <label id='labelusuario' for='usuario'>Usuário</label>
+            </div>
+            
+            <div class='label-float'>
+                <input type='password' id='senha' placeholder='' required>
+                <label id='labelSenha' for='senha'>Senha</label>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            
+            <div class='justify-center'>
+                <p> Não tem uma conta? 
+                    <a href='../html/signup.html'>Cadastre-se</a>
+                </p>
+
+                <button onclick='Entrar()'>Entrar</button>
+
+            </div>
+            
+            <div class='justify-center'>
+                <hr>
+            </div>
+
+            <h2 class="logon-title">Logar com as Redes Sociais</h2>
+
+            <div class="logon-social">
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com.br%2F%3Fhl%3Dpt-BR&ec=GAZAmgQ&hl=pt-BR&ifkv=AVQVeyxanwSZgo0Y7aub6YI9qv25YmgndKcqPXNmG2Chyqt2EBnEw1CjIUE8fxJhlEEIjlLE0laCtg&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S2131658529%3A1697684095523807&theme=glif"><img src="../images/google-1.png" width="40" height="40" class="logon-icon-g"></a>
+
+                <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjk3Njg0MTIwLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"><img src="../images/faceboook.png" width="40" height="40" class="logon-icon-f"></a>
+
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B"requested_variant"%3A"eyJsYW5nIjoicHQifQ%3D%3D"%7D"><img src="../images/twitter.png" width="40" height="40" class="logon-icon-t"></a>
+
+                <a href="https://www.instagram.com"><img src="../images/instagram.png" width="40" height="40" class="logon-icon-i"></a>
+            
+            </div>
+        </div>    
+    </div>
+    <script src="../js/signin.js"></script>
+</body>
+</html>
